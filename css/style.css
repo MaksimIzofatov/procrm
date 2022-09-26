@@ -48,9 +48,10 @@ background-color: #264248;
 }
 
 .logo{
+    margin-top: 15px;
     width: 100px;
     height: 100px;
-    
+    margin-bottom: 5px;
 }
 
 .enter .btn{
@@ -144,16 +145,18 @@ background-color: #264248;
     box-shadow: 0 0 20px;
 }
 
-.fa-solid.fa-language{
-    width: 150px;
-    height: 100px;
+.card i{
+    font-size: 100px;
+    margin-bottom: 75px;
 }
+
 
 .presentation{
     display: flex;
-    justify-content: center;
-    align-items:center;
     
+    
+    flex-direction: column;
+    align-items:center;
     
 }
 
@@ -163,12 +166,15 @@ background-color: #264248;
     align-items: center;
 }
 .pres_item_1_text,
-.pres_item_1_img{
+.pres_item_1_img,
+.pres_item_2_img,
+.pres_item_2_text{
     width: 50%;
     height: 100%;
 }
 
-.pres_item_1_text{
+.pres_item_1_text,
+.pres_item_2_text{
     padding: 30px;
     text-align: center;
     display: flex;
@@ -178,18 +184,30 @@ background-color: #264248;
     justify-content: center;
    
 }
-.pres_item_1_text h3{
-    color:#fdae38
+.pres_item_1_text h3,
+.pres_item_2_text h3{
+    color:#fdae38;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.pres_item_1_text span{
+    color:#fdae38;
+}
+.pres_item_1_text p,
+.pres_item_2_text p{
+    font-size: 24px;
 }
 
-.pres_item_1_img{
+.pres_item_1_img,
+.pres_item_2_img{
     position: relative;
     background-color:#4fa3a5;
     display: flex;
     align-items:center;
     justify-content: center;
 }
-.pres_item_1_img img{
+.pres_item_1_img img,
+.pres_item_2_img img{
     position: absolute;
     
     height: 550px;
@@ -200,13 +218,55 @@ background-color: #264248;
     border-radius: 25px;
     transition: all 0.4s;
 }
+.pres_item_2_img img{
+    transform: translateX(30%);
+}
 
 .pres_item_1_img img:hover{
     transform: translateX(50%);
     box-shadow: 300px 0 #264248;
 }
+.pres_item_2_img img:hover{
+    transform: translateX(-50%);
+    box-shadow: -300px 0 #264248;
+}
 
 .footer{
     height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.logo_footer h4{
+    color:#4fa3a5;
+    font-size: 16px;
+}
+
+.logo_footer img{
+    height: 150px;
+}
+
+.social_footer a{
+    text-decoration: none;
+    font-size: 50px;
+    border-radius:50%;
+    color:#4fa3a5;
+    margin-right: 20px;
+    transition: all 0.4s;
+}
+.social_footer i{
+    font-size: 50px;
+    
+}
+
+.social_footer a:hover{
+    color:#fdae38;
 }
 
